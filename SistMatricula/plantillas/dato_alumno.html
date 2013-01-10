@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+
+{% block titulo %} --------REPORTES-------------{%  endblock %}
+{% block encabezado %}
+	<h1> --- REPORTES-----</h1>
+{% endblock %}
+
+{% block contenido %}
+
+<h1>{{alumno.nombre}}</h1>
+	<h2>Direcion:</h2>
+	<p>{{alumno.direccion}}</p>
+
+	<h2>Telefono:</h2>
+	<p>{{alumno.telefono}}</p>
+
+	<h2>Email:</h2>
+	<p>{{alumno.correo}}</p>
+	
+
+
+{% endblock %}

@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block titulo %} --------REPORTES-------------{%  endblock %}
+{% block encabezado %}
+	<h1> --- REPORTES-----</h1>
+{% endblock %}
+
+{% block contenido %}
+
+<h1>Lista de profesores</h1>
+	{% for elemento in profesor %}
+	<ul>
+	  <li><strong><a href="/dato-profesor/{{elemento.id}}">{{elemento.nombre}}</strong></li>
+	 	</ul>
+	{% endfor %}
+
+
+{% endblock %}
+
+
+
+
+	 
+
